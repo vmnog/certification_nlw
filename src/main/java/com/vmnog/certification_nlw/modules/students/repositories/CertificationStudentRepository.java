@@ -13,4 +13,7 @@ import com.vmnog.certification_nlw.modules.students.entities.CertificationStuden
 public interface CertificationStudentRepository extends JpaRepository<CertificationStudentEntity, UUID> {
     @Query("SELECT c FROM certifications c JOIN c.studentEntity s WHERE s.email = :email AND c.technology = :technology")
     List<CertificationStudentEntity> findByStudentEmailAndTechnology(String email, String technology);
+
+    @Query("SELECT c FROM certifications c ORDER BY c.grade DESC")
+    List<CertificationStudentEntity> findTop10ByTechnologyOrderByScoreDesc();
 }

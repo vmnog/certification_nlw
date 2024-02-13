@@ -2,8 +2,8 @@ package com.vmnog.certification_nlw.modules.questions.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.vmnog.certification_nlw.modules.dto.AlternativesDTO;
-import com.vmnog.certification_nlw.modules.dto.QuestionAlternativeCorrectDTO;
+import com.vmnog.certification_nlw.modules.questions.dto.AlternativesDTO;
+import com.vmnog.certification_nlw.modules.questions.dto.QuestionAlternativeCorrectDTO;
 import com.vmnog.certification_nlw.modules.questions.entities.AlternativesEntity;
 import com.vmnog.certification_nlw.modules.questions.entities.QuestionEntity;
 import com.vmnog.certification_nlw.modules.questions.repositories.QuestionRepository;

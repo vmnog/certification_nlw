@@ -1,4 +1,4 @@
-package com.vmnog.certification_nlw.modules.dto;
+package com.vmnog.certification_nlw.modules.questions.dto;
 
 import java.util.List;
 import java.util.UUID;
